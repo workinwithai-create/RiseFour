@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>RiseFour — four-bar rise desk</title>
+  <meta name="description" content="Four live bars that build intensity so the next section has a way in." />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+<main>
+  <p class="eyebrow">WorkinWithAI · live chairs</p>
+  <h1>RiseFour</h1>
+  <p class="lead">Four-bar rise desk. Loops stall. Session players write four live bars that add energy bar by bar — more chairs, open hats, bass walk, brass stab — then the next section lands earned. Live piano, upright, nylon, kit, trumpet, violin. Not a tag. Not a key change. Not a full pre-chorus.</p>
+  <p class="status" id="status">Tap to start audio · seating chairs…</p>
+  <div class="controls">
+    <label>BPM <input type="number" id="bpm" min="60" max="180" value="98" /></label>
+    <label>Key <select id="key"><option>A minor</option><option>C major</option><option>D minor</option><option>E major</option></select></label>
+    <label>Chords <input type="text" id="chords" value="Am F C G" placeholder="Am F C G" /></label>
+  </div>
+  <p class="eyebrow">Rise recipe</p>
+  <div class="row" id="recipes"></div>
+  <p class="eyebrow">Form · pocket 1–4 · rise 5–8</p>
+  <div class="bars" id="bars"></div>
+  <h2>Punch list</h2>
+  <pre id="punch"></pre>
+</main>
+<div class="dock">
+  <button id="playA">A · Pocket loop</button>
+  <button id="playB">B · Pocket + rise</button>
+  <button id="play8">8 · Rise only</button>
+  <button class="ghost" id="stop">Stop</button>
+  <button class="ghost" id="export">Export WAV</button>
+  <button class="ghost" id="copy">Copy punch</button>
+</div>
+<script type="module" src="./app.js"></script>
+</body>
+</html>
