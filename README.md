@@ -26,6 +26,18 @@ Yesterday's ship was TwistEight. RiseFour is the short, focused rise that makes 
 
 1–4 pocket · 5–8 rise · bar 9 is the landing
 
+## Milestone: Production WAV export
+
+- OfflineAudioContext render
+- Exact length: Math.round(bars * 4 * 60 / bpm * 48000)
+- First downbeat at sample 0
+- Tail folded for seamless loop
+- Peak normalized ≤ -1 dBFS
+- 48 kHz 24-bit stereo
+- Filename: risefour-recipe-<bpm>bpm-<key>.wav
+
+MIDI export and full license gate remain next milestones. Not yet called shipped.
+
 ## Pricing recommendation
 
 One-time **$19** on Gumroad (mirror Lemon Squeezy).
